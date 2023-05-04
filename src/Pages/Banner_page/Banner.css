@@ -1,0 +1,21 @@
+.banner-bg{
+    background-image: url(https://i.ibb.co/4NnXDRZ/annie-spratt-R3-Lcf-Tvc-GWY-unsplash.jpg);
+    height: 91vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+
+.banner{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+}
+
+
+.banner-image{
+    height: 85vh ;
+}
