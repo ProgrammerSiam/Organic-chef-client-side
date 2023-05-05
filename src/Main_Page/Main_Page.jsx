@@ -16,13 +16,10 @@ import { AuthContext } from "../Provaiders/AuthProvaider";
 const Main_Page = () => {
   const { chefs } = useContext(AuthContext);
 
-  // console.log('data ', chef)
   return (
     <div className="mt-5">
       <h1 className="font-monospace fw-bolder text-center my-5">
         welcome to our organic food store
-        <br />
-        <spa className="text-danger fs-6">Pick Your Product From our Store</spa>
       </h1>
       <Row xs={1} md={2} lg={3} className="g-4 mt-5 container mx-auto">
         {chefs.map((chef) => (
