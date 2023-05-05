@@ -110,6 +110,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+
+          <hr className="mt-4 mb-3" />
+          <p className="text-center text-light">
+            © 2023 Mehedi Hasan Siam. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
