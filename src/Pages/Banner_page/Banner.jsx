@@ -13,7 +13,7 @@ const Banner = () => {
                         If You are hungry this sites for you .. <br />
                         you can find here chinese cuisin with their special recipes
                     </p>
-                    <Button to='/' variant='outline-primary' className='mt-5 text-white fw-bold '>Scroll Down to see Our awards gain Chef</Button>
+                    {/* <Button to='/' variant='outline-primary' className='mt-5 text-white fw-bold '>Scroll Down to see Our awards gain Chef</Button> */}
                 </div>
                 {/* <div>
                     <img className='banner-image' src="https://i.ibb.co/ZYSpmpN/julien-tromeur-Egl-YLW2ness-unsplash-removebg.png" alt="" />

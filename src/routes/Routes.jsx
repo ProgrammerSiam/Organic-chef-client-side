@@ -13,36 +13,42 @@ import ErrorPage from "../Error_Page/ErrorPage";
 import Blog from "../Blog/Blog";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main></Main>,
-        errorElement:<ErrorPage></ErrorPage>,
-        children: [
-            {
-                path: '/',
-                element: <Home_page></Home_page>
-            },
-            {
-                path: '/blog',
-                element: <Blog></Blog>
-            },
-            {
-                path: 'login',
-                element: <Login></Login>
-            },
-            {
-                path: 'register',
-                element: <Register></Register>
-            },
-            {
-                path: '/:id',
-                element:<PrivateRoute> <Recipes></Recipes></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://international-chef-and-their-recipes-data-radifkhanrafin.vercel.app/chef/${params.id}`)
-            }
-
-        ]
-
-    }
-])
+  {
+    path: "/",
+    element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home_page></Home_page>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
+      },
+      {
+        path: "register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/:id",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <Recipes></Recipes>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://international-chef-and-their-recipes-data-rust.vercel.app/chef/${params.id}`
+          ),
+      },
+    ],
+  },
+]);
 
 export default router;
