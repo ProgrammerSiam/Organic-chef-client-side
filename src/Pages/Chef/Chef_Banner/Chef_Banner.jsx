@@ -17,14 +17,14 @@ const Chef_Banner = ({ selectChef }) => {
                         {
                             show ? <span>{bio.slice(0, 150)}...</span> : <span>{bio}</span>
                         }
-                        <button onClick={() => { setShow(!show) }} className='btn text-danger fw-bold'>
+                        <button onClick={() => { setShow(!show) }} className='btn  fw-bold'>
                             {
                                 show ? 'read more' : "read less"
                             }
                         </button>
                     </p>
 
-                    <p className='d-flex align-items-center gap-2'>Likes : {like} <FaThumbsUp className='text-primary' /></p>
+                    <p className='d-flex align-items-center gap-2'>Likes : {like} <FaThumbsUp className='text-dark' /></p>
                     <p>Numbers Of Recipes <FaCookieBite className='text-danger' /> : {N_resipes}items
                     </p>
                     <p>Experience : {experience}+</p>

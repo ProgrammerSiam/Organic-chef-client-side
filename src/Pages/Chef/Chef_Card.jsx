@@ -11,7 +11,7 @@ const Chef_Card = ({ chef }) => {
       <Col>
         <Card className="shadow-lg">
           <Card.Img
-            style={{ width: "", height: "400px" , objectFit:"cover" }}
+            style={{ height: "400px" , objectFit:"cover" }}
             className="image-fluid"
             variant="top"
             src={image}
