@@ -12,28 +12,23 @@ import {
 } from "react-icons/fa";
 
 const Features = () => {
-
-
-
-  
   return (
- 
     <section className="review-section py-5">
       <div className="container">
         <h2 className="text-center mb-5">Customer Reviews</h2>
         <div className="row">
           <div className="col-md-4">
             <Card className="mb-4">
-              <Card.Img variant="top" src='images1.jpg' alt="Person 1" />
+              <Card.Img variant="top" src="images1.jpg" alt="Person 1" />
               <Card.Body>
                 <Card.Title>John Doe</Card.Title>
                 <Card.Text>
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vivamus ac purus elit."
                 </Card.Text>
-                <div className="text-center">
+                {/* <div className="text-center">
                   <span className="rating">4.5</span>
-                </div>
+                </div> */}
               </Card.Body>
             </Card>
           </div>
@@ -46,9 +41,9 @@ const Features = () => {
                   "Sed eu ante eget nisl convallis tempus. Curabitur maximus
                   ullamcorper neque et mattis."
                 </Card.Text>
-                <div className="text-center">
+                {/* <div className="text-center">
                   <span className="rating">4.8</span>
-                </div>
+                </div> */}
               </Card.Body>
             </Card>
           </div>
@@ -61,18 +56,14 @@ const Features = () => {
                   "Fusce convallis malesuada libero, a suscipit mauris aliquam
                   sit amet."
                 </Card.Text>
-                <div className="text-center">
+                {/* <div className="text-center">
                   <span className="rating">4.2</span>
-                </div>
+                </div> */}
               </Card.Body>
             </Card>
           </div>
         </div>
       </div>
-
-
-
-
 
       <div className="container">
         <h2 className="text-center mb-5">Customer views</h2>
@@ -120,9 +111,6 @@ const Features = () => {
           </div>
         </div>
       </div>
-
-
-
     </section>
   );
 };
