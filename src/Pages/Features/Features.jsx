@@ -18,47 +18,73 @@ const Features = () => {
         <h2 className="text-center mb-5">Customer Reviews</h2>
         <div className="row">
           <div className="col-md-4">
-            <Card className="mb-4">
-              <Card.Img variant="top" src="images1.jpg" alt="Person 1" />
+            <Card className="mb-4 ">
+              <Card.Img
+                className="p-3"
+                style={{
+                  height: "50%",
+                  width: "25%",
+                  borderRadius: "100%",
+                  objectFit: "cover",
+                }}
+                variant="top"
+                src={"https://i.ibb.co/8cLgkPs/img-1.jpg"}
+                alt="Person 1"
+              />
+
               <Card.Body>
                 <Card.Title>John Doe</Card.Title>
                 <Card.Text>
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vivamus ac purus elit."
                 </Card.Text>
-                {/* <div className="text-center">
-                  <span className="rating">4.5</span>
-                </div> */}
               </Card.Body>
             </Card>
           </div>
           <div className="col-md-4">
             <Card className="mb-4">
-              <Card.Img variant="top" src="image2.jpg" alt="Person 2" />
+              <Card.Img
+                className="p-3"
+                style={{
+                  height: "50%",
+                  width: "25%",
+                  borderRadius: "100%",
+                  objectFit: "cover",
+                }}
+                variant="top"
+                src="https://i.ibb.co/rkTqmTr/img-2.jpg
+"
+                alt="Person 2"
+              />
               <Card.Body>
                 <Card.Title>Jane Smith</Card.Title>
                 <Card.Text>
                   "Sed eu ante eget nisl convallis tempus. Curabitur maximus
                   ullamcorper neque et mattis."
                 </Card.Text>
-                {/* <div className="text-center">
-                  <span className="rating">4.8</span>
-                </div> */}
               </Card.Body>
             </Card>
           </div>
           <div className="col-md-4">
             <Card className="mb-4">
-              <Card.Img variant="top" src="image3.jpg" alt="Person 3" />
+              <Card.Img
+                className="p-3"
+                style={{
+                  height: "50%",
+                  width: "25%",
+                  borderRadius: "100%",
+                  objectFit: "cover",
+                }}
+                variant="top"
+                src="https://i.ibb.co/8cLgkPs/img-1.jpg"
+                alt="Person 3"
+              />
               <Card.Body>
                 <Card.Title>Emily Johnson</Card.Title>
                 <Card.Text>
                   "Fusce convallis malesuada libero, a suscipit mauris aliquam
                   sit amet."
                 </Card.Text>
-                {/* <div className="text-center">
-                  <span className="rating">4.2</span>
-                </div> */}
               </Card.Body>
             </Card>
           </div>

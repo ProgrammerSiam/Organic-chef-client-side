@@ -38,14 +38,11 @@ const router = createBrowserRouter([
         path: "/:id",
         element: (
           <PrivateRoute>
-            {" "}
             <Recipes></Recipes>
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://international-chef-and-their-recipes-data-rust.vercel.app/chef/${params.id}`
-          ),
+          fetch(`http://localhost:5000/chef/${params.id}`),
       },
     ],
   },

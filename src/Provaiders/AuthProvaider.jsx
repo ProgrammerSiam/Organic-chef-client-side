@@ -66,9 +66,7 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    fetch(
-      "https://international-chef-and-their-recipes-data-rust.vercel.app/chef"
-    )
+    fetch("http://localhost:5000/chef")
       .then((res) => res.json())
       .then((chef_data) => setChefs(chef_data));
   }, []);
