@@ -59,54 +59,86 @@ const Register = () => {
         setaccepted(event.target.checked)
     }
     return (
-        <Container className='mt-5 pt-5'>
-            <h3 className='text-center'>Register your account</h3>
-            <Form
-                onSubmit={handleFormInfo}
-                className='w-50 mx-auto'>
-                <Form.Group className="mb-3" >
-                    <Form.Label >Your Name</Form.Label>
-                    <Form.Control required name='name' type="text" placeholder="Enter your name" />
-                </Form.Group>
-                <Form.Group className="mb-3" >
-                    <Form.Label >Photo Url</Form.Label>
-                    <Form.Control name='photo_url' type="text" placeholder="Enter your Photo url" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Label >Email address</Form.Label>
-                    <Form.Control required name='email' type="email" placeholder="Enter email" />
-                </Form.Group>
-                <p className='text-danger'>{passerror && passerror}</p>
-                <Form.Group className="mb-3" >
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control required name='password' type="password" placeholder="Password" />
+      <Container className="mt-5 pt-5 ">
+        <h1 className="text-center py-5">Register your account</h1>
+        <Form onSubmit={handleFormInfo} className="w-50 mx-auto py-1">
+          <Form.Group className="mb-3">
+            <Form.Label>Your Name</Form.Label>
+            <Form.Control
+              required
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Photo Url</Form.Label>
+            <Form.Control
+              name="photo_url"
+              type="text"
+              placeholder="Enter your Photo url"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control
+              required
+              name="email"
+              type="email"
+              placeholder="Enter email"
+            />
+          </Form.Group>
+          <p className="text-danger">{passerror && passerror}</p>
+          <Form.Group className="mb-3">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              required
+              name="password"
+              type="password"
+              placeholder="Password"
+            />
+          </Form.Group>
 
-                </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              required
+              name="confrim_password"
+              type="password"
+              placeholder="Password"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <Form.Check
+              onClick={handleAccepted}
+              type="checkbox"
+              name="check"
+              label={
+                <>
+                  Accept <Link to="/terms">Term & Conditions</Link>{" "}
+                </>
+              }
+            />
+          </Form.Group>
+          <p>{erro && erro.message}</p>
 
-                <Form.Group className="mb-3" >
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control required name='confrim_password' type="password" placeholder="Password" />
-
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check
-                        onClick={handleAccepted}
-                        type="checkbox"
-                        name='check'
-                        label={<>Accept <Link to='/terms'>Term & Conditions</Link> </>} />
-                </Form.Group>
-                <p>
-                    {
-                        erro && erro.message
-                    }
-                </p>
-
-                <Button variant="primary" className='w-100' disabled={!accepted} type="submit">
-                    Register
-                </Button>
-                <p className='mt-2'>Already Have An Account ?<Link className='text-danger' to='/login'> Login </Link> </p>
-            </Form>
-        </Container>
+          <Button
+            variant="primary"
+            className="w-100"
+            disabled={!accepted}
+            type="submit"
+          >
+            Register
+          </Button>
+          <p className="mt-2">
+            Already Have An Account ?
+            <Link className="text-danger" to="/login">
+              {" "}
+              Login{" "}
+            </Link>{" "}
+          </p>
+        </Form>
+      </Container>
     );
 };
 
