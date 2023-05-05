@@ -45,12 +45,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto d-flex gap-3  align-items-lg-center align-items-sm-start">
-              {/* <Link to="/" className="nav-link text-decoration-none  fw-bold ">
-              Home
-            </Link> */}
               <Link
                 to="/blog"
-                className="nav-link text-decoration-none  fw-bold "
+                className="nav-link text-dark text-decoration-none  fw-bold "
               >
                 Blogs
               </Link>
@@ -58,13 +55,13 @@ const Header = () => {
                 {user ? (
                   <Link
                     onClick={handleLogout}
-                    className=" text-decoration-none  fw-bold "
+                    className=" nav-link text-dark text-decoration-none  fw-bold "
                   >
                     logout
                   </Link>
                 ) : (
                   <Link
-                    className="  text-decoration-none  fw-bold "
+                    className=" nav-link text-dark  text-decoration-none  fw-bold "
                     to="/login"
                   >
                     Login
