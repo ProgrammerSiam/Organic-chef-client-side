@@ -1,3 +1,13 @@
 /* .nav-link.active{
 color: blue;
 } */
+
+header{
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+     background: #ffffff;
+     z-index: 1000;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}

@@ -28,69 +28,71 @@ const Header = () => {
     </Tooltip>
   );
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      bg="light"
-      // variant="dark"
-      className="py-3"
-    >
-      <Container>
-        <Navbar.Brand>
-          <h2>
-            <Link to="/" className=" fw-bold  text-black text-decoration-none">
-              Popular Chef
-            </Link>
-          </h2>
-        </Navbar.Brand>
-        <Navbar.Brand></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto d-flex gap-3  align-items-lg-center align-items-sm-start">
-            {/* <Link to="/" className="nav-link text-decoration-none  fw-bold ">
+    <header>
+      <Navbar collapseOnSelect expand="lg" bg="light" className="py-3 ">
+        <Container>
+          <Navbar.Brand>
+            <h2>
+              <Link
+                to="/"
+                className=" fw-bold  text-black text-decoration-none"
+              >
+                Popular Chef
+              </Link>
+            </h2>
+          </Navbar.Brand>
+
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto d-flex gap-3  align-items-lg-center align-items-sm-start">
+              {/* <Link to="/" className="nav-link text-decoration-none  fw-bold ">
               Home
             </Link> */}
-            <Link
-              to="/blog"
-              className="nav-link text-decoration-none  fw-bold "
-            >
-              Blogs
-            </Link>
-            <>
-              {user ? (
-                <Link
-                  onClick={handleLogout}
-                  className=" text-decoration-none  fw-bold "
-                >
-                  logout
-                </Link>
-              ) : (
-                <Link className="  text-decoration-none  fw-bold " to="/login">
-                  Login
-                </Link>
-              )}
-            </>
-            
-            {user && (
-              <OverlayTrigger
-                placement="right"
-                delay={{ show: 250, hide: 400 }}
-                overlay={renderTooltip}
+              <Link
+                to="/blog"
+                className="nav-link text-decoration-none  fw-bold "
               >
-                <span className="rounded-circle">
-                  <img
-                    style={{ width: "50px" }}
-                    className="rounded-circle"
-                    src={user.photoURL}
-                    alt=""
-                  />
-                </span>
-              </OverlayTrigger>
-            )}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+                Blogs
+              </Link>
+              <>
+                {user ? (
+                  <Link
+                    onClick={handleLogout}
+                    className=" text-decoration-none  fw-bold "
+                  >
+                    logout
+                  </Link>
+                ) : (
+                  <Link
+                    className="  text-decoration-none  fw-bold "
+                    to="/login"
+                  >
+                    Login
+                  </Link>
+                )}
+              </>
+
+              {user && (
+                <OverlayTrigger
+                  placement="right"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip}
+                >
+                  <span className="rounded-circle">
+                    <img
+                      style={{ width: "50px" }}
+                      className="rounded-circle"
+                      src={user.photoURL}
+                      alt=""
+                    />
+                  </span>
+                </OverlayTrigger>
+              )}
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
   );
 };
 
