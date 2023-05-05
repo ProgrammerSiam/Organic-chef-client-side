@@ -14,9 +14,7 @@ const Banner = () => {
             </p>
        
           </div>
-          {/* <div>
-                    <img className='banner-image' src="https://i.ibb.co/ZYSpmpN/julien-tromeur-Egl-YLW2ness-unsplash-removebg.png" alt="" />
-                </div> */}
+      
         </div>
       </div>
     );

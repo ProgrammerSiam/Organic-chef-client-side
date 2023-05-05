@@ -11,19 +11,18 @@ const Main_Page = () => {
 
     // console.log('data ', chef)
     return (
-        <div className='mt-5'>
-            <h1 className='font-monospace fw-bolder text-center my-5'>Welcome to our Chef Zone</h1>
-            <Row xs={1} md={2} lg={3} className="g-4 mt-5 container mx-auto">
-            {
-                chefs.map(chef=><Chef_Card
-                chef={chef}
-                key={chef.id}
-                ></Chef_Card>)
-            }
-            </Row>
-           
-        </div>
-
+      <div className="mt-5">
+        <h1 className="font-monospace fw-bolder text-center my-5">
+          Explore Our Store
+      <br />
+          <span className='text-danger fs-6'>Pick Your Product From  our Store</span>
+        </h1>
+        <Row xs={1} md={2} lg={3} className="g-4 mt-5 container mx-auto">
+          {chefs.map((chef) => (
+            <Chef_Card chef={chef} key={chef.id}></Chef_Card>
+          ))}
+        </Row>
+      </div>
     );
 };
 

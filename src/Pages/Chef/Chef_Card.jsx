@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Chef_Card = ({ chef }) => {
   const { id, image, name, location, experience, like, N_resipes } = chef;
-  // console.log(chef)
+
   return (
     <div>
       <Col>
