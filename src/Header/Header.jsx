@@ -37,7 +37,7 @@ const Header = () => {
                 to="/"
                 className=" fw-bold  text-black text-decoration-none"
               >
-                Popular Chef
+                Organic
               </Link>
             </h2>
           </Navbar.Brand>
