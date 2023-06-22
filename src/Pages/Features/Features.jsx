@@ -1,5 +1,5 @@
 import React from "react";
-import { Rating } from "@smastrom/react-rating";
+
 
 import { Card } from "react-bootstrap";
 import {
@@ -94,7 +94,7 @@ const Features = () => {
       <div className="container">
         <h2 className="text-center mb-5">Customer views</h2>
         <div className="row">
-          <div className="col">
+          <div className="col ">
             <div className="card">
               <div className="card-body">
                 <FaPlusCircle className=" fs-1" />

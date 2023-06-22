@@ -55,7 +55,6 @@ const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
-      // console.log('logged in user inside auth state observer', loggedUser)
       setUser(loggedUser);
       setLoading(false);
     });
@@ -66,7 +65,9 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/chef")
+    fetch(
+      "https://international-chef-and-their-recipes-d-mehediinfo10101-gmailcom.vercel.app/chef"
+    )
       .then((res) => res.json())
       .then((chef_data) => setChefs(chef_data));
   }, []);

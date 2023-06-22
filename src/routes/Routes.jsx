@@ -42,7 +42,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/chef/${params.id}`),
+          fetch(
+            `https://international-chef-and-their-recipes-d-mehediinfo10101-gmailcom.vercel.app/chef/${params.id}`
+          ),
       },
     ],
   },

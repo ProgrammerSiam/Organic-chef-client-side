@@ -1,5 +1,4 @@
 
-
 header{
      position: fixed;
      left: 0;
@@ -11,6 +10,3 @@ header{
 }
 
 
-header nav .nav-link.active {
-     color: blue;
-}

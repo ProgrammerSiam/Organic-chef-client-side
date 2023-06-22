@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { FaCookie, FaCookieBite, FaHeart, FaThumbsUp } from 'react-icons/fa';
+import { FaCookie, FaCookieBite,  FaThumbsUp } from 'react-icons/fa';
 
 
 const Chef_Banner = ({ selectChef }) => {

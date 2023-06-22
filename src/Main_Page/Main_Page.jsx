@@ -18,8 +18,8 @@ const Main_Page = () => {
 
   return (
     <div className="mt-5">
-      <h1 className="font-monospace fw-bolder text-center my-5">
-        welcome to our organic food store
+      <h1 className=" fw-bolder text-center my-5">
+        welcome to our organic chef Society
       </h1>
       <Row xs={1} md={2} lg={3} className="g-4 mt-5 container mx-auto">
         {chefs.map((chef) => (

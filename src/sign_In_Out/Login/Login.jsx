@@ -77,11 +77,11 @@ const Login = () => {
           Submit
         </Button>
         <p className="mt-2">
-          Dont’t Have An Account ?
+          Dont't Have An Account ?
           <Link className="" to="/register">
-            {" "}
-            Register{" "}
-          </Link>{" "}
+            
+            Register
+          </Link>
         </p>
       </Form>
       <p className="text-center text-danger py-2">or</p>
